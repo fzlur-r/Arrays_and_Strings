@@ -17,7 +17,7 @@ def is_unique(string):
         return string if string[0] != string[1] else None
 		
     elif len(string) > 256: #if the string has more than 265 character, which the maksimal possible character in extended ASCII code, then it will always have at least one double character thus will return None
-        return "None"
+        return None
 		
     else: #else by brute force method, an itteration will be conduct then comparing every character in string, and if there any similar character, None value will ber returned and the loop will stop 
         for count, char in enumerate(string[:-1]):
