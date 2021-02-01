@@ -19,7 +19,7 @@ def is_unique(string):
     elif length > 256: #if the string has more than 265 character, which the maksimal possible character in extended ASCII code, then it will always have at least one double character thus will return None
         return None
 		
-    else: #else by array indexing method, an array will be initialized with the shape of length x 1. If there's two or more difference character landing on the same index, then the second array will be initialized with the size of (max - min) // length + 1 and all these character would then replaced to this new array. Finnaly like before, if there are similar character, the function will return None value and the loop will stopped.
+    else: #else by array double indexing method, an array will be initialized with the shape of length x 1. If there's two or more difference character landing on the same index, then the second array will be initialized with the size of (max - min) // length + 1 and all these character would then replaced to this new array. Finnaly like before, if there are similar character, the function will return None value and the loop will stopped.
 		
 		#this loop will find the minimum character in a string
         mins = string[0]
