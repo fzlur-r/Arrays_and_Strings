@@ -1,10 +1,10 @@
 def is_unique(string):
     #this function is to determine if a string has all unique characters or not
     #if the string is unique then this function will return that string, else it will return None
-	#the input argument is string
+    #the input argument is string
     #restriction: using only array and string data type
 	
-	#store the string's length, and then performing symtax based on it
+    #store the string's length, and then performing symtax based on it
     length = len(string)
 	
     if length == 0: #if the string has no character then it's simply return None value
