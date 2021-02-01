@@ -40,7 +40,6 @@ def is_unique(string):
         maks, mins = ord(maks) + 1, ord(mins)
         array = [None] * (maks - mins)
         
-        
         for char in string:
             ix = (ord(char) - mins) % maks
             if array[ix] is None:
