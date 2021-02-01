@@ -20,8 +20,8 @@ def is_unique(string):
         return None
 		
     else: #else by array double indexing method, an array will be initialized with the shape of length x 1. If there's two or more difference character landing on the same index, then the second array will be initialized with the size of (max - min) // length + 1 and all these character would then replaced to this new array. Finnaly like before, if there are similar character, the function will return None value and the loop will stopped.
-		
-		#this loop will find the minimum character in a string
+
+        #this loop will find the minimum character in a string
         mins = string[0]
         for char in string[1:]:
             if mins > char:
