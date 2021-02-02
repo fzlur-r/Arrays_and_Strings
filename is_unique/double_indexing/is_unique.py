@@ -59,3 +59,9 @@ def is_unique(string):
                 array[ix][iy] = iy
 				
         return string
+	
+def main():
+    return (is_unique(input()))
+
+if __name__ == "__main__":
+    main()
