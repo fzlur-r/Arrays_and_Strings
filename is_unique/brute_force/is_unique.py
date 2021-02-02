@@ -26,3 +26,9 @@ def is_unique(string):
                     return None
                 
         return string #if the loop finish, then it means the string is unique.
+
+def main():
+    return (is_unique(input()))
+
+if __name__ == "__main__":
+    main()
