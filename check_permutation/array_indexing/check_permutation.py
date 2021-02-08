@@ -26,7 +26,7 @@ def check_permutation(string1, string2):
     #if the loop finish succesfully, then those string are permutation of each other
     return True
     
-    def main():
+def main():
     string1 = input()
     string2 = input()
     return check_permutation(string1, string2)
