@@ -97,7 +97,7 @@ def check_permutation(string1, string2):
 def main():
     string1 = input()
     string2 = input()
-    print(check_permutation(string1, string2))
+    return check_permutation(string1, string2)
     
 if __name__ == "__main__":
     main()
