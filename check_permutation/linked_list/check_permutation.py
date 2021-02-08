@@ -91,7 +91,7 @@ def check_permutation(string1, string2):
             if linked_list.body is None:
                 return False
 				
-        #if the loop have been succesfully, then those string are permutation of each other
+        #if the loop finish succesfully, then those string are permutation of each other
         return True
 
 def main():
