@@ -19,38 +19,17 @@ def is_unique(string):
     elif length > 256: #if the string has more than 265 character, which the maksimal possible character in extended ASCII code, then it will always have at least one double character thus will return None
         return None
         
-    else: #else by prime hashing method, an array will be initialized with the shape of 7 x 1. This way, the array size are in constant value. After that a mathematical operation to find the first - 40 prime number respective to character divisor value which stored in array index respective to character residual value. If the character already exist, then the value stored in array can be divided by the prime number which will return None, else the loop is continue and finally return the unique string.
+    else: #else by prime hashing method, an array will be initialized with the shape of 16. This way, the array size are in constant value. After that a prime number of the first - 16 is called respective to the character residual value. Then if the character is already exist, then the value stored in array can be divided by the prime number which will return None, else the prime number multiplied with the value in array index respective to character divisor value and the loop is continue and finally return the unique string.
     
-        #this loop will find the minimum character in a string
-        mins = string[0]
-        for char in string[1:]:
-            if mins > char:
-                mins = char
-         
-        #this loop will find the maksimum character in a string   
-        maks = string[0]
-        for char in string[1:]:
-            if maks < char:
-                maks = char
-    
-        #in pythonic ways, the upper syntax can be substitute by max() and min() method which return the maximum and minimum value in array
-        #mins, maks = ord(min(string)), ord(max(string))
-        
-        mins, maks = ord(mins), ord(maks)
-        array = [None]*7
+        prime_array = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53]
+        array = [1] * 16
         
         for char in string:
-            value = ord(char) - mins
-            ix = value % 7
-            n = (value // 7) + 1
-            prime = n * (n - 1) + 41
-            
-            if array[ix] is None:
-                array[ix] = prime
-            elif array[ix] % prime == 0:
+            value = ord(char)
+            if array[value // 16] % prime_array[value % 16] == 0:
                 return None
             else:
-                array[ix] *= prime
+                array[value // 16] *= prime_array[value % 16]
 
         return string
 
