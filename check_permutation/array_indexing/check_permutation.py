@@ -7,8 +7,8 @@ def check_permutation(string1, string2):
         return False
     
     #else counting how many character present in each string
-	else:
-		#initialize array to store the character counter respective to its ascii code value
+    else:
+	#initialize array to store the character counter respective to its ascii code value
     	char_array = [0] * 256
     
     	#add the value counter to array
