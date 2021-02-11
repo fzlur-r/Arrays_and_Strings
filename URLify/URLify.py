@@ -42,7 +42,7 @@ def URLify (string, true_length = None):
     return "".join(dummy)
     
 def main():
-    return URLify(input())
+    return URLify(input(), input())
     
 if __name__ == "__main__":
     main()
