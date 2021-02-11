@@ -34,7 +34,7 @@ def is_unique(string):
         return string
 
 def main():
-    return (is_unique(input()))
+    return is_unique(input())
 
 if __name__ == "__main__":
     main()
